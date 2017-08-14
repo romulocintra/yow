@@ -1,0 +1,2 @@
+import { IBase } from './base';
+

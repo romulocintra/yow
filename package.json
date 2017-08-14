@@ -1,5 +1,5 @@
 {
-  "name": "yow",
+  "name": "yow-yo",
   "version": "0.0.0",
   "description": "yow",
   "license": "MIT",
@@ -30,6 +30,7 @@
     "watch:test": "jest --watch"
   },
   "dependencies": {
+    "chalk": "^2.1.0"
   },
   "devDependencies": {
     "@types/jest": "^20.0.5",
