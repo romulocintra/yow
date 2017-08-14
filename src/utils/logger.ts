@@ -13,8 +13,6 @@ export class YowLogger {
   private readonly _logger: winston.LoggerInstance;
   private readonly _transport: winston.TransportInstance;
 
- 
-
   constructor(options: Options) {
     options = options || {};
 
@@ -34,7 +32,6 @@ export class YowLogger {
     this.info = this._log.bind(this, 'info');
     this.debug = this._log.bind(this, 'debug');
   }
- 
 
   debug: (...valuesToLog: any[]) => void;
   error: (...valuesToLog: any[]) => void;
@@ -49,7 +46,7 @@ export class YowLogger {
     this._transport.level = newLevel;
   }
 
- private _log(_level: Level, _msg: string, _metadata?: any) {
+  private _log(_level: Level, _msg: string, _metadata?: any) {
     this._logger.log.apply(this._logger, arguments);
   }
 }
