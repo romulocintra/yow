@@ -4,8 +4,10 @@ export interface IBase {
   'welcome-message': string;
   'cli-bin': string;
   'logo-ascii': string;
-  'check-updates' : boolean,
-  'auto-update' : boolean,
-  'registry' : string,
-  'timeout' : number 
+  'check-updates': boolean;
+  'auto-update': boolean;
+  'registry': string;
+  'timeout': number;
+  'version': string;
+  'node-version': string;
 }
